@@ -1,0 +1,152 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Exo', sans-serif;
+  background-color: black;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #313449;
+  line-height: 30px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-bottom: 1px solid black;
+}
+
+.main-header h1 {
+  color: red;
+}
+
+.main-header input {
+  border-radius: 20px;
+  padding: 15px;
+  width: 200px;
+  height: 30px;
+}
+
+/* CONTENT */
+.main-content {
+ display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  margin-top: 70px;
+  flex-basis: 20%;
+  background-color: #313449;
+  height: 100vh;
+  padding: 10px;
+  border-right: 1px solid black;
+}
+
+.sidebar h2 {
+  margin: 20px 0;
+
+}
+
+.sidebar li {
+  list-style-type: none;
+  padding: 3px 0;
+  cursor: pointer;
+}
+
+/* SECTION */
+.films {
+  /* flex-basis: 80%; */
+  margin-top: 70px;
+  padding-top: 10px;
+  position: absolute;
+  /* top: 50px; */
+  left: 20%;
+  width: 80%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #414562;
+}
+
+.films h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.info-list  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.info-list li {
+  position: relative;
+  margin: 20px 10px;
+  text-align: center;
+  background-color: #313449;
+  width: 200px;
+  height: 250px;
+  border-radius: 3px;
+}
+
+.info-list li:hover .overlay{
+  opacity: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 11px;
+  background-color: #313449;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.box-film {
+  height: 70%;
+}
+
+.box-film img{
+  height: 100%;
+}
+
+.box-film .title,
+.box-film .original-title,
+.box-film .language,
+.box-film .vote {
+  font-size: 12px;
+}
+
+
+.flag{
+  display: inline-block;
+}
+
+.language img {
+  height: 10px;
+}
+
+.vote i {
+  color: yellow;
+}
